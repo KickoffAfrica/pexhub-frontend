@@ -20,8 +20,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Nigerian Tax Assistant",
-  description: "Get instant answers to your questions about Nigeria's 2025 tax laws and regulations",
+  title: "FAAN || PEXHUB SUPPORT",
+  description: "Get instant answers to your questions about FAAN's PEXHUB Support",
 };
 
 export default function RootLayout({

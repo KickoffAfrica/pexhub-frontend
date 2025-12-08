@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useChat } from "../hooks/use-chat";
-import { ChatHeader } from "./app-header";
+import { AppHeader } from "./app-header";
 import { ChatInput } from "./chat-input";
 import { MessageList } from "./message-list";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -52,7 +52,7 @@ export function ChatInterface({ initialPrompt }: ChatInterfaceProps) {
   return (
     <div className="flex flex-col h-screen max-h-screen overflow-hidden">
       {/* Header */}
-      <ChatHeader onNewChat={handleNewChat} />
+      <AppHeader onNewChat={handleNewChat} />
 
       {/* Main content area */}
       <div className="flex-1 flex flex-col overflow-hidden">
