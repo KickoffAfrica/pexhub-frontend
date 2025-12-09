@@ -81,33 +81,31 @@ export function LandingPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#eff0f1] dark:bg-background">
+    <div className="flex flex-col min-h-screen relative overflow-hidden">
+      {/* Background image - covers entire screen */}
+      <div 
+        className="fixed inset-0 pointer-events-none -z-10"
+        style={{
+          backgroundImage: "url('/airport-bg.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      
+      {/* Overlay gradient - covers entire screen */}
+      <div 
+        className="fixed inset-0 pointer-events-none -z-10"
+        style={{
+          background: "linear-gradient(180deg, rgba(2, 19, 39, 0.9) 0%, rgba(2, 19, 39, 0.8) 50%, rgba(2, 19, 39, 0.9) 100%)",
+        }}
+      />
+
       {/* Header */}
       <AppHeader />
 
-      {/* Main content area with themed background */}
-      <div className="flex-1 flex items-center justify-center py-8 md:py-12 relative overflow-hidden">
-        {/* Light theme background */}
-        <div 
-          className="absolute inset-0 pointer-events-none dark:hidden"
-          style={{
-            backgroundImage: "url(/light-theme-bg.svg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-        
-        {/* Dark theme background */}
-        <div 
-          className="absolute inset-0 pointer-events-none hidden dark:block"
-          style={{
-            backgroundImage: "url(/dark-theme-bg.svg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
+      {/* Main content area */}
+      <div className="flex-1 flex items-center justify-center py-8 md:py-12 relative">
 
         {/* Top-left blur gradient */}
         <div 

@@ -12,8 +12,8 @@ function Logo() {
         <Image src="/Faan.logo_ 1.svg" alt="Logo" width={isMobile ? 50 : 80} height={isMobile ? 50 : 80} />
         {/* </div> */}
         <div className='flex flex-col'>
-            <h1 className='text-primary-950 md:text-2xl text-base font-bold'>PEXHUB</h1>
-            <p className='text-blue-500 dark:text-blue-200 md:text-sm text-[8px] uppercase'>Official Support</p>
+            <h1 className='text-white md:text-2xl text-base font-bold'>PEXHUB</h1>
+            <p className='text-blue-200 md:text-sm text-[8px] uppercase'>Official Support</p>
         </div>
     </div>
   )
