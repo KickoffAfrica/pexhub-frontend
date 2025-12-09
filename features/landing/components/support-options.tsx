@@ -21,11 +21,11 @@ export function SupportOptions({
       <Card className="p-6 md:p-8 bg-white dark:bg-[#16181C] shadow-xl rounded-3xl border-0">
         {/* Header */}
         <div className="text-center mb-2 md:mb-4">
-          <h1 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">
-            How can we help you today?
+          <h1 className="text-xl md:text-2xl font-semibold text-foreground mb-2">
+          Welcome to the FAAN Passenger Experience Hub (PExHub)
           </h1>
           <p className="text-muted-foreground text-sm md:text-base">
-            Select an option below for immediate assistance at the airport.
+          How can we help you today?
           </p>
         </div>
 
