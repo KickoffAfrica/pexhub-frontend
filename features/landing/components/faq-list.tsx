@@ -65,9 +65,72 @@ export function FAQList({ onBack }: FAQListProps) {
               </div>
               {expandedId === faq.id && (
                 <div className="px-4 pb-4 pt-0">
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  {(() => {
+                    const lines = faq.answer.split("\n");
+                    const hasListItems = lines.some((line) => line.trim().startsWith("-"));
+                    
+                    if (!hasListItems) {
+                      return (
+                        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                          {faq.answer}
+                        </p>
+                      );
+                    }
+                    
+                    // Split into text and list sections
+                    const parts: Array<{ type: "text" | "list"; content: string[] }> = [];
+                    let currentText: string[] = [];
+                    let currentList: string[] = [];
+                    
+                    lines.forEach((line) => {
+                      const trimmed = line.trim();
+                      if (trimmed.startsWith("-")) {
+                        // If we have accumulated text, save it
+                        if (currentText.length > 0) {
+                          parts.push({ type: "text", content: currentText });
+                          currentText = [];
+                        }
+                        // Add to list
+                        currentList.push(trimmed.substring(1).trim());
+                      } else if (trimmed) {
+                        // If we have accumulated list items, save them
+                        if (currentList.length > 0) {
+                          parts.push({ type: "list", content: currentList });
+                          currentList = [];
+                        }
+                        // Add to text
+                        currentText.push(trimmed);
+                      }
+                    });
+                    
+                    // Add remaining items
+                    if (currentText.length > 0) {
+                      parts.push({ type: "text", content: currentText });
+                    }
+                    if (currentList.length > 0) {
+                      parts.push({ type: "list", content: currentList });
+                    }
+                    
+                    return (
+                      <div className="text-sm text-muted-foreground leading-relaxed space-y-2">
+                        {parts.map((part, partIndex) => {
+                          if (part.type === "text") {
+                            return (
+                              <p key={partIndex}>{part.content.join(" ")}</p>
+                            );
+                          } else {
+                            return (
+                              <ul key={partIndex} className="list-disc list-inside space-y-1 ml-2">
+                                {part.content.map((item, itemIndex) => (
+                                  <li key={itemIndex}>{item}</li>
+                                ))}
+                              </ul>
+                            );
+                          }
+                        })}
+                      </div>
+                    );
+                  })()}
                 </div>
               )}
             </Card>

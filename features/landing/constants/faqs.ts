@@ -8,52 +8,61 @@ export const faqs: FAQ[] = [
   {
     id: "what-is-pexhub",
     question: "What is PExHub?",
-    answer: "PExHub (Passenger Experience Hub) is FAAN's official digital support platform designed to help airport passengers quickly access assistance, find support desks, contact customer service, and get answers to common questions.",
+    answer: "PExHub (Passenger Experience Hub) is a digital support platform created by FAAN to help passengers quickly access assistance, directions, and information across Nigerian airports.",
   },
   {
     id: "supported-airports",
     question: "Which airports are supported on PExHub?",
-    answer: "PExHub currently supports all major Nigerian airports managed by FAAN, including Murtala Muhammed International Airport (Lagos), Nnamdi Azikiwe International Airport (Abuja), Mallam Aminu Kano International Airport (Kano), and Sam Mbakwe Cargo Airport (Owerri).",
+    answer: "PExHub currently supports:\n- Murtala Muhammed International Airport, Lagos\n- Nnamdi Azikiwe International Airport, Abuja\n- Mallam Aminu Kano International Airport, Kano\n- Sam Mbakwe Airport, Owerri",
   },
   {
     id: "find-customer-service",
     question: "How do I find a physical customer service desk?",
-    answer: "Use the 'Find Support Desk' option on the main screen, select your current airport, and you'll receive detailed directions to the nearest customer service desk at your terminal.",
+    answer: "Select your airport on the landing page. You will receive a simple guide showing where to locate the nearest customer support desk within that airport.",
   },
   {
     id: "chat-with-representative",
     question: "How do I chat with a FAAN representative?",
-    answer: "Click 'Chat With Us' on the main screen to start a conversation with our support team via WhatsApp. Our representatives are available to assist you with any queries or concerns.",
+    answer: "Click Chat With Us. You will be redirected to the official FAAN WhatsApp support bot for real-time assistance.",
   },
   {
     id: "call-for-support",
     question: "How can I call FAAN for immediate support?",
-    answer: "Use the 'Call Us' option to access our toll-free support line. Our agents are available 24/7 to assist you with urgent matters or general inquiries.",
+    answer: "Click Call Us on the landing page to view the direct customer support phone number for your selected airport.",
   },
   {
     id: "issues-we-help-with",
     question: "What type of issues can FAAN customer support help with?",
-    answer: "Our support team can assist with lost luggage, flight information, terminal navigation, accessibility services, complaints, security concerns, and general airport inquiries.",
+    answer: "Support can assist with:\n- Flight information guidance\n- Lost & found inquiries\n- Airport navigation\n- Complaints or service issues\n- Accessibility support\n- General passenger assistance",
   },
   {
     id: "report-missing-item",
     question: "How do I report a missing item?",
-    answer: "Visit the nearest customer service desk or use the 'Call Us' option to report a missing item. Provide details such as the item description, last known location, and your contact information.",
+    answer: "Select your airport → choose Customer Support Desk or Chat With Us to report lost property and follow the recovery process.",
   },
   {
     id: "arrival-time",
     question: "How early should I arrive at the airport?",
-    answer: "For domestic flights, we recommend arriving at least 2 hours before departure. For international flights, please arrive at least 3 hours before your scheduled departure time.",
+    answer: "- Local flights: 2 hours before departure\n- International flights: 3 hours before departure",
   },
   {
     id: "accessibility-services",
     question: "Can I get help with accessibility or mobility services?",
-    answer: "Yes! FAAN provides wheelchair assistance, priority boarding, and other accessibility services. Contact our support team in advance or visit the customer service desk upon arrival to arrange assistance.",
+    answer: "Yes. FAAN provides assistance for elderly passengers, passengers with disabilities, and unaccompanied minors. Use Chat With Us or Find PHC stand for help.",
   },
   {
     id: "flight-status",
-    question: "Where can I check my flight status?",
-    answer: "Flight status information is available on the departure/arrival boards throughout the terminal. You can also contact your airline directly or ask at any information desk for real-time updates.",
+    question: "Where can I get updates on flight status?",
+    answer: "PExHub does not show live flight updates yet. Passengers should check with their airline at the terminal or through their airline's website.",
+  },
+  {
+    id: "make-complaint",
+    question: "How do I make a complaint?",
+    answer: "Use the Chat With Us option or visit the customer service desk in your airport to submit a complaint or feedback.",
+  },
+  {
+    id: "wifi-availability",
+    question: "Is Wi-Fi available at the airport?",
+    answer: "Wi-Fi availability varies by airport. Check with the customer service desk for the most accurate information.",
   },
 ];
-

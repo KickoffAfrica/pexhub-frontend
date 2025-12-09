@@ -10,7 +10,10 @@ interface CallUsProps {
 
 // Placeholder phone number - can be updated later
 const TOLL_FREE_NUMBER = "0700-FAAN-HELP";
-const TEL_LINK = "tel:+2347003226435"; // Numeric equivalent for tel: link
+const TOLL_FREE_NUMBER_2 = "080 0000 3226";
+const TOLL_FREE_NUMBER_3 = "02013303226";
+const TEL_LINK = "tel:+23480 0000 3226"; // Numeric equivalent for tel: link
+
 
 export function CallUs({ onBack }: CallUsProps) {
   return (
@@ -73,7 +76,21 @@ export function CallUs({ onBack }: CallUsProps) {
                   TOLL FREE
                 </p>
                 <p className="text-2xl md:text-3xl font-bold text-primary-950 dark:text-foreground">
-                  {TOLL_FREE_NUMBER}
+                  {TOLL_FREE_NUMBER_2}
+                </p>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2 mt-2">
+                 PAY AS YOU GO 
+                </p>
+                
+                <p className="text-2xl md:text-3xl font-bold text-primary-950 dark:text-foreground">
+                  {TOLL_FREE_NUMBER_3}
+                </p>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2 mt-2">
+                 WHATSAPP 
+                </p>
+                
+                <p className="text-2xl md:text-3xl font-bold text-primary-950 dark:text-foreground">
+                  {TOLL_FREE_NUMBER_3}
                 </p>
               </div>
             </div>
