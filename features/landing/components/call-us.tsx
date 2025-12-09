@@ -75,32 +75,25 @@ export function CallUs({ onBack }: CallUsProps) {
                 <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">
                   TOLL FREE
                 </p>
+                <a href={`tel:${TOLL_FREE_NUMBER_2}`} className="block">
+
                 <p className="text-2xl md:text-3xl font-bold text-primary-950 dark:text-foreground">
                   {TOLL_FREE_NUMBER_2}
                 </p>
+                </a>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2 mt-2">
                  PAY AS YOU GO 
                 </p>
-                
+                <a href={`tel:${TOLL_FREE_NUMBER_3}`} className="block">
+
                 <p className="text-2xl md:text-3xl font-bold text-primary-950 dark:text-foreground">
                   {TOLL_FREE_NUMBER_3}
                 </p>
-                <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2 mt-2">
-                 WHATSAPP 
-                </p>
+                </a>
                 
-                <p className="text-2xl md:text-3xl font-bold text-primary-950 dark:text-foreground">
-                  {TOLL_FREE_NUMBER_3}
-                </p>
               </div>
             </div>
-             {/* Call Now Button */}
-        <a href={TEL_LINK} className="block">
-          <Button className="w-full bg-primary-950 hover:bg-primary-900 dark:bg-primary-500 text-white rounded-xl py-6 text-base font-medium flex items-center justify-center gap-2">
-            <Phone className="h-5 w-5" />
-            Call Now
-          </Button>
-        </a>
+         
         {/* Note */}
         <p className="text-xs text-muted-foreground text-center">
           Note: Standard network charges may apply. If using a tablet, ensure it
