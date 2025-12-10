@@ -50,7 +50,7 @@ export function FAQList({ onBack }: FAQListProps) {
               key={faq.id}
               className={`cursor-pointer border transition-all duration-200 rounded-xl overflow-hidden py-0 gap-0 ${
                 expandedId === faq.id
-                  ? "border-primary-300 bg-primary-50/50 dark:bg-primary-500/5"
+                  ? "border-primary-300 bg-white dark:bg-[#16181C]"
                   : "border-border hover:border-primary-200 bg-white dark:bg-[#16181C]"
               }`}
               onClick={() => toggleExpand(faq.id)}
