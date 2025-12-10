@@ -30,7 +30,7 @@ export function ThemeToggle({ isMobile }: ThemeToggleProps) {
     <Button
       variant="ghost"
       size="icon"
-      className="rounded-full h-8 w-8 md:h-10 md:w-10 p-2 bg-white  md:dark:bg-[#16181C]"
+      className="rounded-full h-8 w-8 md:h-10 md:w-10 p-2 bg-white dark:bg-[#16181C]"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label="Toggle theme"
     >

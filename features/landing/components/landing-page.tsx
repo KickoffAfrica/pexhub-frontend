@@ -105,7 +105,7 @@ export function LandingPage() {
       <AppHeader />
 
       {/* Main content area */}
-      <div className="flex-1 flex items-center justify-center py-4 md:py-12 relative">
+      <div className=" flex items-center justify-center  py-4 md:py-12 relative">
 
         {/* Top-left blur gradient */}
         <div 

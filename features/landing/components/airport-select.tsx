@@ -27,7 +27,7 @@ export function AirportSelect({ onBack, onSelectAirport }: AirportSelectProps) {
   if(isMobile) {
     return (
       <div className="w-full max-w-lg mx-auto px-4">
-        <div className="p-2  space-y-6">
+        <div className="p-2 ">
         {/* Back Button */}
         <div>
           <Button
