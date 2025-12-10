@@ -13,7 +13,7 @@ export const faqs: FAQ[] = [
   {
     id: "supported-airports",
     question: "Which airports are supported on PExHub?",
-    answer: "PExHub currently supports:\n- Murtala Muhammed International Airport, Lagos\n- Muritala Muhammed International Airport, Terminal 1 Lagos \n- Nnamdi Azikiwe International Airport, Abuja\n- Mallam Aminu Kano International Airport, Kano\n- Sam Mbakwe Airport, Owerri",
+    answer: "PExHub currently supports:\n- Murtala Muhammed International Airport, Lagos\n- Murtala Muhammed International Airport, Terminal 1 Lagos \n- Nnamdi Azikiwe International Airport, Abuja\n- Mallam Aminu Kano International Airport, Kano\n- Sam Mbakwe Airport, Owerri",
   },
   {
     id: "find-customer-service",
