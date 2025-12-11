@@ -205,8 +205,8 @@ export function SupportOptions({
             <ChevronRight className="h-5 w-5 text-muted-foreground shrink-0" />
           </Card>
         </div>
-        <a href="mailto:helpdesk@faanpexhub.ng">
-        <p className="text-[12px] text-center">For complaints, send an email to <span className="text-primary-500 font-semibold">helpdesk@faanpexhub.ng</span></p>
+        <a href="mailto:support@faanpexhub.zohodesk.com">
+        <p className="text-[12px] text-center">For complaints, send an email to <span className="text-primary-500 font-semibold">support@faanpexhub.zohodesk.com</span></p>
         </a>
       </Card>
     </div>

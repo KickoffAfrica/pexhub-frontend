@@ -73,7 +73,7 @@ export function DirectionGuide({ airport, onBack, onDone }: DirectionGuideProps)
         {/* Done Button */}
         <Button
           onClick={onDone}
-          className="w-full bg-primary-950 hover:bg-primary-900 dark:bg-primary-500 text-white rounded-xl py-6 text-base font-medium"
+          className="w-full bg-primary-500 hover:bg-primary-900 dark:bg-primary-500 text-white rounded-xl py-6 text-base font-medium"
         >
           Done
         </Button>
