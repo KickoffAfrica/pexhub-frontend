@@ -10,7 +10,7 @@ import { FAQList } from "./faq-list";
 import { type Airport } from "../constants/airports";
 
 // WhatsApp placeholder link - update with actual business number
-const WHATSAPP_LINK = "https://wa.me/2348110003226?text=Hello%2C%20I%20need%20assistance%20at%20the%20airport";
+const WHATSAPP_LINK = "https://wa.me/2348053379016?text=Hello%2C%20I%20need%20assistance%20at%20the%20airport";
 
 type ViewState = "home" | "airport-select" | "direction-guide" | "call-us" | "faq";
 
