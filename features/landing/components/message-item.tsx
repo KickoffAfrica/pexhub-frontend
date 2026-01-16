@@ -5,7 +5,8 @@ import { Message } from "../types";
 import { cn } from "@/lib/utils";
 import { AlertCircle, BotIcon, CheckCircle2, Loader2, User } from "lucide-react";
 import Image from "next/image";
-import { MarkdownText } from "../utils/parse-markdown";
+// import { MarkdownText } from "../utils/parse-markdown";
+import Markdown from 'react-markdown'
 
 interface MessageItemProps {
   message: Message;
@@ -65,7 +66,7 @@ export function MessageItem({ message, onRetry }: MessageItemProps) {
             {isUser ? (
               message.content
             ) : (
-              <MarkdownText>{message.content}</MarkdownText>
+              <Markdown>{message.content}</Markdown>
             )}
           </div>
         </div>
